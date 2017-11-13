@@ -15,4 +15,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.ios.deployment_target = '10.0'
   s.requires_arc = true
+
+  s.source_files = 'GTToolBox/**/*.{h,m,mm,c}'
+  s.public_header_files = 'GTToolBox/**/*.h'   #公开头文件地址
+  s.frameworks = 'UIKit','CoreGraphics','Foundation'
 end
