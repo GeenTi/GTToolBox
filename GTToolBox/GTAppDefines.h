@@ -9,9 +9,7 @@
 #ifndef GTAppDefines_h
 #define GTAppDefines_h
 
-
-#define kGT_App_Name                    NSLocalizedStringFromTable(@"CFBundleDisplayName", @"InfoPlist", nil)
-
+#define kGT_App_Name                [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"]
 
 #define kGT_App_BundleID                [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 
