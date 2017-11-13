@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 #import "GTAppDefines.h"
-#Import "GTSecurity.h"
+
+#import "GTSecurity.h"
+
+#import "GTCategorys.h"
 
 //! Project version number for GTToolBox.
 FOUNDATION_EXPORT double GTToolBoxVersionNumber;

@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name             = "GTToolBox"
   s.version          = "1.0.0"
-  s.summary          = "iOS App ToolBox"
+  s.summary          = "GTToolBox is a iOS App ToolBox"
   s.description      = <<-DESC
-                       It is a marquee view used on iOS, which implement by Objective-C.
+                       GTToolBox is a tool library to facilitate the development of their own iOSApp, written in Object-C, only supports iOS10.0 and later.
                        DESC
   s.homepage         = "https://github.com/GeenTi/GTToolBox/tree/master"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -21,6 +21,6 @@ Pod::Spec.new do |s|
   s.resources = 'GTToolBox/**/*.{h,m,mm,c}'
   # s.vendored_frameworks = 'GTToolBox.framework'
   # => 系统依赖类
-  s.frameworks = 'Foundation','UIKit'
+  s.frameworks = 'Foundation','UIKit','CoreGraphics'
   # => 第三方类
 end

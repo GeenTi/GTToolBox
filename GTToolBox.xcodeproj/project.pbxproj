@@ -11,6 +11,14 @@
 		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */; };
+		FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */; };
+		FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */; };
+		FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */; };
+		FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +29,14 @@
 		FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSecurity.h; sourceTree = "<group>"; };
 		FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSecurity.m; sourceTree = "<group>"; };
 		FBD7FF521FB9569E00F2B06B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
+		FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCategorys.h; sourceTree = "<group>"; };
+		FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTEXPand.m"; sourceTree = "<group>"; };
+		FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GTEXPand.m"; sourceTree = "<group>"; };
+		FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GTEXPand.h"; sourceTree = "<group>"; };
+		FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GTEXPand.h"; sourceTree = "<group>"; };
+		FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GTToolBox.mm; sourceTree = "<group>"; };
+		FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GTEXPand.h"; sourceTree = "<group>"; };
+		FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GTEXPand.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +70,10 @@
 		FBA02C4F1FB58F2400A78EEF /* GTToolBox */ = {
 			isa = PBXGroup;
 			children = (
-				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
 				FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */,
+				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
+				FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */,
+				FBD7FF541FB97DEB00F2B06B /* GTCategorys */,
 				FBD7FF4C1FB9562800F2B06B /* GTSecurity */,
 				FBD7FF531FB97CC200F2B06B /* Supporting Files */,
 			);
@@ -87,6 +105,20 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FBD7FF541FB97DEB00F2B06B /* GTCategorys */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */,
+				FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */,
+				FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */,
+				FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */,
+				FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */,
+				FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */,
+				FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */,
+			);
+			path = GTCategorys;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -95,7 +127,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */,
+				FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */,
+				FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */,
+				FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */,
 				FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */,
+				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */,
+				FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */,
+				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
 				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
+				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
