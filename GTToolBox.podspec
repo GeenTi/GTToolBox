@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "GTToolBox"
   s.version          = "1.0.0"
-  s.summary          = "GTToolBox is a iOS App ToolBox"
+  s.summary          = "iOS App ToolBox"
   s.description      = <<-DESC
                        GTToolBox is a tool library to facilitate the development of their own iOSApp, written in Object-C, only supports iOS10.0 and later.
                        DESC
