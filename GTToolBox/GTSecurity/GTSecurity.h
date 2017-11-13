@@ -17,6 +17,6 @@
  @param srcString 欲加密的字符串
  @return 返回32位加密结果字符串
  */
-+ (NSString *)GT_MD5_32Bit_Encription_With_SRCString:(NSString *)srcString
++ (NSString *)GT_MD5_32Bit_Encription_With_SRCString:(NSString *)srcString;
 
 @end
