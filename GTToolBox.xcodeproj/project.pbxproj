@@ -57,7 +57,7 @@
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
 				FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */,
 				FBD7FF4C1FB9562800F2B06B /* GTSecurity */,
-				FBA02C511FB58F2400A78EEF /* Info.plist */,
+				FBD7FF531FB97CC200F2B06B /* Supporting Files */,
 			);
 			path = GTToolBox;
 			sourceTree = "<group>";
@@ -77,6 +77,14 @@
 				FBD7FF521FB9569E00F2B06B /* libc.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FBD7FF531FB97CC200F2B06B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA02C511FB58F2400A78EEF /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +296,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GTToolBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GTToolBox/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -311,7 +319,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GTToolBox/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GTToolBox/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
