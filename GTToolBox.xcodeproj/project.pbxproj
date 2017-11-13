@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA02C501FB58F2400A78EEF /* GTToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FBA02C4D1FB58F2400A78EEF /* GTToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDefines.h; sourceTree = "<group>"; };
+		FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSecurity.h; sourceTree = "<group>"; };
+		FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSecurity.m; sourceTree = "<group>"; };
+		FBD7FF521FB9569E00F2B06B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +39,7 @@
 			children = (
 				FBA02C4F1FB58F2400A78EEF /* GTToolBox */,
 				FBA02C4E1FB58F2400A78EEF /* Products */,
+				FBD7FF511FB9569E00F2B06B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,9 +55,28 @@
 			isa = PBXGroup;
 			children = (
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
+				FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */,
+				FBD7FF4C1FB9562800F2B06B /* GTSecurity */,
 				FBA02C511FB58F2400A78EEF /* Info.plist */,
 			);
 			path = GTToolBox;
+			sourceTree = "<group>";
+		};
+		FBD7FF4C1FB9562800F2B06B /* GTSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */,
+				FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */,
+			);
+			path = GTSecurity;
+			sourceTree = "<group>";
+		};
+		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBD7FF521FB9569E00F2B06B /* libc.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,6 +86,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */,
+				FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -131,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
