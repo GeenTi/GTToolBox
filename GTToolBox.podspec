@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 
-  s.public_header_files = "GTToolBox/GTToolBox.h"
-  # s.resources = 'GTToolBox/**/*.{h,m,mm,c}'
+  s.public_header_files = "GTToolBox/**/*.h"
+  s.resources = 'GTToolBox/**/*.{m,mm,c}'
   # => 系统依赖类
   s.frameworks = 'Foundation','UIKit','CoreGraphics'
   # => 第三方类
