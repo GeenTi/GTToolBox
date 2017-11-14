@@ -19,6 +19,9 @@
 		FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */; };
 		FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */; };
+		FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */; };
+		FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GTToolBox.mm; sourceTree = "<group>"; };
 		FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GTEXPand.h"; sourceTree = "<group>"; };
 		FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GTEXPand.m"; sourceTree = "<group>"; };
+		FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GTEXPand.h"; sourceTree = "<group>"; };
+		FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GTEXPand.m"; sourceTree = "<group>"; };
+		FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFuncExtension.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */,
+				FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */,
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
 				FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */,
 				FBD7FF541FB97DEB00F2B06B /* GTCategorys */,
@@ -115,6 +122,8 @@
 				FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */,
 				FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */,
 				FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */,
+				FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */,
+				FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */,
 			);
 			path = GTCategorys;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 				FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */,
 				FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */,
 				FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */,
+				FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */,
+				FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */,
 				FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */,
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
@@ -209,6 +220,7 @@
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
 				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
+				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
