@@ -1,14 +1,14 @@
 //
-//  UITextField+ZXEXPand.m
+//  UITextField+GTEXPand.m
 //  TangKuOne
 //
 //  Created by WMYeah on 2017/9/29.
-//  Copyright © 2017年 XingData. All rights reserved.
+//  Copyright © 2017年 GeenTi. All rights reserved.
 //
 
-#import "UITextField+ZXEXPand.h"
+#import "UITextField+GTEXPand.h"
 
-@implementation UITextField (ZXEXPand)
+@implementation UITextField (GTEXPand)
 
 - (void)GT_Add_ToolBar_Done
 {

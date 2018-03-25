@@ -14,3 +14,6 @@
 #import "UIColor+GTEXPand.h"
 
 #import "UILabel+GTExpand.h"
+
+#import "UITextField+GTEXPand.h"
+
