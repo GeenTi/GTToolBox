@@ -55,7 +55,7 @@
     return NO;
 }
 
-+ (BOOL)GT_heckPhoneNumber:(NSString *)phoneNumber
++ (BOOL)GT_CheckPhoneNumber:(NSString *)phoneNumber
 {
     NSString *regex = @"^((13[0-9])|(147)|(15[^4,\\D])|(17[0-9])|(18[0-9]))\\d{8}$";
     
