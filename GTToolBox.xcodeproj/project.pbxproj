@@ -24,7 +24,7 @@
 		FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */; };
 		FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBFB06B12067E18800058143 /* UITextField+ZXEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06AF2067E18800058143 /* UITextField+ZXEXPand.h */; };
+		FBFB06B12067E18800058143 /* UITextField+ZXEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06AF2067E18800058143 /* UITextField+ZXEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBFB06B22067E18800058143 /* UITextField+ZXEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06B02067E18800058143 /* UITextField+ZXEXPand.m */; };
 /* End PBXBuildFile section */
 
