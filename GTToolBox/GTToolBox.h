@@ -29,4 +29,18 @@
  */
 + (NSString *)GT_Get_GTToolsBox_Version;
 
+
+/*!
+ *  计算字符串所在Label 中的宽度
+ *
+ *  @param content 计算的内容
+ *  @param height  计算的高度
+ *  @param font    font字体大小
+ *
+ *  @return 返回宽度
+ */
++ (CGFloat)GT_GetWidthWithContent:(NSString *)content height:(CGFloat)height font:(CGFloat)font;
+
+
+
 @end
