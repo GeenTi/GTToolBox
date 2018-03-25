@@ -24,6 +24,8 @@
 		FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */; };
 		FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBFB06B12067E18800058143 /* UITextField+ZXEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06AF2067E18800058143 /* UITextField+ZXEXPand.h */; };
+		FBFB06B22067E18800058143 /* UITextField+ZXEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06B02067E18800058143 /* UITextField+ZXEXPand.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFuncExtension.h; sourceTree = "<group>"; };
 		FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+GTExpand.m"; sourceTree = "<group>"; };
 		FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+GTExpand.h"; sourceTree = "<group>"; };
+		FBFB06AF2067E18800058143 /* UITextField+ZXEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+ZXEXPand.h"; sourceTree = "<group>"; };
+		FBFB06B02067E18800058143 /* UITextField+ZXEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+ZXEXPand.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 			isa = PBXGroup;
 			children = (
 				FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */,
+				FBFB06AF2067E18800058143 /* UITextField+ZXEXPand.h */,
+				FBFB06B02067E18800058143 /* UITextField+ZXEXPand.m */,
 				FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */,
 				FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */,
 				FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */,
@@ -151,6 +157,7 @@
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
+				FBFB06B12067E18800058143 /* UITextField+ZXEXPand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +234,7 @@
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
 				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
+				FBFB06B22067E18800058143 /* UITextField+ZXEXPand.m in Sources */,
 				FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */,
 				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
 			);
