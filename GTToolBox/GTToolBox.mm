@@ -8,14 +8,14 @@
 
 #import "GTToolBox.h"
 
+#define kGT_GTToolBox_Version   @"1.0.3"
+
+
 @implementation GTToolBox
 
 + (NSString *)GT_Get_GTToolsBox_Version
 {
-    NSBundle *bundle = [NSBundle bundleForClass:[GTToolBox class]];
-    NSString *versionString = [[bundle infoDictionary] objectForKey:@"CFBundleShortVersionString"];
-    
-    return versionString;
+    return kGT_GTToolBox_Version;
 }
 
 

@@ -22,6 +22,8 @@
 		FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */; };
 		FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */; };
+		FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GTEXPand.h"; sourceTree = "<group>"; };
 		FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GTEXPand.m"; sourceTree = "<group>"; };
 		FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFuncExtension.h; sourceTree = "<group>"; };
+		FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+GTExpand.m"; sourceTree = "<group>"; };
+		FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+GTExpand.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 				FBD7FF7E1FB9824500F2B06B /* UIColor+GTEXPand.m */,
 				FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */,
 				FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */,
+				FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */,
+				FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */,
 			);
 			path = GTCategorys;
 			sourceTree = "<group>";
@@ -143,6 +149,7 @@
 				FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */,
 				FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */,
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
+				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,7 +181,7 @@
 		FBA02C441FB58F2400A78EEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = GeenTi;
 				TargetAttributes = {
 					FBA02C4C1FB58F2400A78EEF = {
@@ -220,6 +227,7 @@
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
 				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
+				FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */,
 				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -328,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -341,7 +349,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KNUGGAQ2SV;
@@ -364,7 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KNUGGAQ2SV;

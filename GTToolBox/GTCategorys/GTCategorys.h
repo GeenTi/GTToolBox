@@ -12,3 +12,5 @@
 #import "UIButton+GTEXPand.h"
 
 #import "UIColor+GTEXPand.h"
+
+#import "UILabel+GTExpand.h"
