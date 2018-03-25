@@ -8,7 +8,7 @@
 
 #import "GTToolBox.h"
 
-#define kGT_GTToolBox_Version   @"1.0.4"
+#define kGT_GTToolBox_Version   @"1.0.5"
 
 
 @implementation GTToolBox
@@ -43,6 +43,27 @@
     
     return false;
 }
+
++ (BOOL)GT_CheckText:(UITextField *)text
+{
+    if (text == nil) {
+        return YES;
+    }
+    if (text.text == nil || [text.text isEqualToString:@""]) {
+        return YES;
+    }
+    return NO;
+}
+
++ (BOOL)GT_heckPhoneNumber:(NSString *)phoneNumber
+{
+    NSString *regex = @"^((13[0-9])|(147)|(15[^4,\\D])|(17[0-9])|(18[0-9]))\\d{8}$";
+    
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    
+    return [pred evaluateWithObject:phoneNumber];
+}
+
 
 
 

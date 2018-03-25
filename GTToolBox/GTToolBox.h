@@ -42,5 +42,23 @@
 + (CGFloat)GT_GetWidthWithContent:(NSString *)content height:(CGFloat)height font:(CGFloat)font;
 
 
+/**
+ 检查文本框有无内容
+
+ @param text 文本框
+ @return 返回认证结果
+ */
++ (BOOL)GT_CheckText:(UITextField *)text;
+
+
+/**
+ 检查手机号是否合法
+
+ @param phoneNumber 手机号
+ @return 返回认证结果
+ */
++ (BOOL)GT_CheckPhoneNumber:(NSString *)phoneNumber;
+
+
 
 @end
