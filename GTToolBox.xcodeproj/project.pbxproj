@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */; };
+		FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */; };
+		FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB81D655207A2E0B00139E66 /* GTEncryption.mm */; };
+		FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */; };
+		FB81D65E207A2E0B00139E66 /* GTEncryptionDes.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */; };
+		FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = FB81D658207A2E0B00139E66 /* GTEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */; };
 		FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA02C501FB58F2400A78EEF /* GTToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBase.c; sourceTree = "<group>"; };
+		FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionMDFive.c; sourceTree = "<group>"; };
+		FB81D655207A2E0B00139E66 /* GTEncryption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTEncryption.mm; sourceTree = "<group>"; };
+		FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionSec.c; sourceTree = "<group>"; };
+		FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionDes.c; sourceTree = "<group>"; };
+		FB81D658207A2E0B00139E66 /* GTEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTEncryption.h; sourceTree = "<group>"; };
+		FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBaseFunc.c; sourceTree = "<group>"; };
 		FBA02C4D1FB58F2400A78EEF /* GTToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +78,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB81D652207A2DEA00139E66 /* GTEncryption */ = {
+			isa = PBXGroup;
+			children = (
+				FB81D658207A2E0B00139E66 /* GTEncryption.h */,
+				FB81D655207A2E0B00139E66 /* GTEncryption.mm */,
+				FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */,
+				FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */,
+				FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */,
+				FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */,
+				FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */,
+			);
+			path = GTEncryption;
+			sourceTree = "<group>";
+		};
 		FBA02C431FB58F2400A78EEF = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +112,7 @@
 		FBA02C4F1FB58F2400A78EEF /* GTToolBox */ = {
 			isa = PBXGroup;
 			children = (
+				FB81D652207A2DEA00139E66 /* GTEncryption */,
 				FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */,
 				FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */,
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
@@ -157,6 +186,7 @@
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
+				FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */,
 				FBFB06B12067E18800058143 /* UITextField+GTEXPand.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,12 +261,18 @@
 			files = (
 				FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */,
 				FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */,
+				FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */,
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
 				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
+				FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */,
+				FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */,
+				FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */,
+				FB81D65E207A2E0B00139E66 /* GTEncryptionDes.c in Sources */,
 				FBFB06B22067E18800058143 /* UITextField+GTEXPand.m in Sources */,
 				FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */,
 				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
+				FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
