@@ -8,7 +8,7 @@
 
 #import "GTToolBox.h"
 
-#define kGT_GTToolBox_Version   @"1.0.8"
+#define kGT_GTToolBox_Version   @"1.1.1"
 
 
 @implementation GTToolBox
