@@ -1,6 +1,6 @@
 //
 //  GTEncryption.mm
-//  ZXFramework
+//  GTToolBox
 //
 //  Created by WMYeah on 15/8/25.
 //  Copyright (c) 2015年 GeenTi（http://www.geenti.com）. All rights reserved.
@@ -10,6 +10,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#import <CommonCrypto/CommonDigest.h>
+#import <objc/runtime.h>
+
 
 
 extern "C" {
@@ -62,5 +65,24 @@ extern "C" {
     
     return decString;
 }
+
+
+//32位MD5加密方式
++ (NSString *)GT_MD5_32Bit_Encription_With_SRCString:(NSString *)srcString
+{
+    if (!srcString) {
+        return nil;
+    }
+    const char *cStr = [srcString UTF8String];
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5( cStr, (int)strlen(cStr), digest );
+    NSMutableString *result = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for(int i = 0; i < CC_MD5_DIGEST_LENGTH; i++)
+        [result appendFormat:@"%02x", digest[i]];
+    
+    return result;
+}
+
+
 
 @end

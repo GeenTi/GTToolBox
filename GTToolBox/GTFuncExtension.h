@@ -10,7 +10,12 @@
 #define GTFuncExtension_h
 
 
-//  常用 Block 定义；
+
+/**
+ GT BLock 带返回值
+
+ @param resultData 返回值
+ */
 typedef void(^GT_Block_Complate_Result)(id resultData);
 
 typedef void(^GT_Block_Complate_Result_Data)(id resultData, NSError *error);

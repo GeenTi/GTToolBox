@@ -1,6 +1,6 @@
 //
 //  GTEncryption.h
-//  ZXFramework
+//  GTToolBox
 //
 //  Created by WMYeah on 15/8/25.
 //  Copyright (c) 2015年 GeenTi（http://www.geenti.com）. All rights reserved.
@@ -27,5 +27,16 @@
  @return 返回解密结果
  */
 + (NSString *)GT_decryptionStrWithWaitingDecryptionString:(NSString *)waitingDecryptionString keyString:(NSString *)keyString;
+
+/**
+ 32位 MD5 加密
+ 
+ @param srcString 欲加密的字符串
+ @return 返回32位加密结果字符串
+ */
++ (NSString *)GT_MD5_32Bit_Encription_With_SRCString:(NSString *)srcString;
+
+
+
 
 @end

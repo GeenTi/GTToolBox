@@ -16,8 +16,6 @@
 
 #import "GTFuncExtension.h"
 
-#import "GTSecurity.h"
-
 #import "GTCategorys.h"
 
 #import "GTEncryption.h"

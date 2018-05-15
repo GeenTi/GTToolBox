@@ -16,8 +16,6 @@
 		FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */; };
 		FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA02C501FB58F2400A78EEF /* GTToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */; };
 		FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */; };
 		FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */; };
@@ -47,8 +45,6 @@
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDefines.h; sourceTree = "<group>"; };
-		FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTSecurity.h; sourceTree = "<group>"; };
-		FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GTSecurity.m; sourceTree = "<group>"; };
 		FBD7FF521FB9569E00F2B06B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCategorys.h; sourceTree = "<group>"; };
 		FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTEXPand.m"; sourceTree = "<group>"; };
@@ -118,19 +114,9 @@
 				FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */,
 				FB81D652207A2DEA00139E66 /* GTEncryption */,
 				FBD7FF541FB97DEB00F2B06B /* GTCategorys */,
-				FBD7FF4C1FB9562800F2B06B /* GTSecurity */,
 				FBD7FF531FB97CC200F2B06B /* Supporting Files */,
 			);
 			path = GTToolBox;
-			sourceTree = "<group>";
-		};
-		FBD7FF4C1FB9562800F2B06B /* GTSecurity */ = {
-			isa = PBXGroup;
-			children = (
-				FBD7FF4D1FB9563600F2B06B /* GTSecurity.h */,
-				FBD7FF4E1FB9563600F2B06B /* GTSecurity.m */,
-			);
-			path = GTSecurity;
 			sourceTree = "<group>";
 		};
 		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
@@ -182,7 +168,6 @@
 				FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */,
 				FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */,
 				FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */,
-				FBD7FF4F1FB9563600F2B06B /* GTSecurity.h in Headers */,
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
@@ -263,7 +248,6 @@
 				FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */,
 				FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */,
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
-				FBD7FF501FB9563600F2B06B /* GTSecurity.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
 				FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */,
 				FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */,
