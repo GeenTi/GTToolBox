@@ -196,7 +196,7 @@ void mg_set_ssl_password_callback(struct mg_context *ctx, mg_spcb_t func);
  * requested or equals to -1, network error occured, usually meaning the
  * remote side has closed the connection.
  */
-int mg_write(struct mg_connection *, const void *buf, int len);
+int mg_write(struct mg_connection *, const void *buf, long len);
 
 
 /*

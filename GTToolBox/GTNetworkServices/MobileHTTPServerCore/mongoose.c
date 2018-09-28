@@ -1475,8 +1475,8 @@ static uint64_t
 push(FILE *fp, SOCKET sock, SSL *ssl, const char *buf, uint64_t len)
 {
 	uint64_t	sent;
-	int		n, k;
-
+	int	 k;
+    long    n;
 	sent = 0;
 	while (sent < len) {
 
@@ -1506,10 +1506,10 @@ push(FILE *fp, SOCKET sock, SSL *ssl, const char *buf, uint64_t len)
  * Read from IO channel - opened file descriptor, socket, or SSL descriptor.
  * Return number of bytes read.
  */
-static int
+static long
 pull(FILE *fp, SOCKET sock, SSL *ssl, char *buf, int len)
 {
-	int	nread;
+	long	nread;
 
 	if (ssl != NULL) {
 		nread = SSL_read(ssl, buf, len);
@@ -1525,7 +1525,7 @@ pull(FILE *fp, SOCKET sock, SSL *ssl, char *buf, int len)
 }
 
 int
-mg_write(struct mg_connection *conn, const void *buf, int len)
+mg_write(struct mg_connection *conn, const void *buf, long len)
 {
 	assert(len >= 0);
 	return ((int) push(NULL, conn->client.sock, conn->ssl,
@@ -2697,7 +2697,8 @@ static void
 send_opened_file_stream(struct mg_connection *conn, FILE *fp, uint64_t len)
 {
 	char	buf[BUFSIZ];
-	int	to_read, num_read, num_written;
+	int	to_read, num_written;
+    long num_read;
 
 	while (len > 0) {
 		/* Calculate how much to read from the file in the buffer */
@@ -2851,8 +2852,8 @@ parse_http_request(char *buf, struct mg_request_info *ri, const struct usa *usa)
 static int
 read_request(FILE *fp, SOCKET sock, SSL *ssl, char *buf, int bufsiz, int *nread)
 {
-	int	n, request_len;
-
+	int	request_len;
+    long n;
 	request_len = 0;
 	while (*nread < bufsiz && request_len == 0) {
 		n = pull(fp, sock, ssl, buf + *nread, bufsiz - *nread);
@@ -3018,7 +3019,7 @@ is_not_modified(const struct mg_connection *conn, const struct mgstat *stp)
 }
 
 static bool_t
-append_chunk(struct mg_request_info *ri, FILE *fp, const char *buf, int len)
+append_chunk(struct mg_request_info *ri, FILE *fp, const char *buf, long len)
 {
 	bool_t	ret_code = TRUE;
 
@@ -3043,8 +3044,10 @@ handle_request_body(struct mg_connection *conn, FILE *fp)
 	const char	*expect, *tmp;
 	uint64_t	content_len;
 	char		buf[BUFSIZ];
-	int		to_read, nread, already_read;
+	int		to_read, already_read;
 	bool_t		success_code = FALSE;
+    
+    long    nread;
 
 	content_len = get_content_length(conn);
 	expect = mg_get_header(conn, "Expect");
@@ -3266,7 +3269,8 @@ prepare_cgi_environment(struct mg_connection *conn, const char *prog,
 static void
 send_cgi(struct mg_connection *conn, const char *prog)
 {
-	int			headers_len, data_len, i, n;
+	int			headers_len, data_len, i;
+    long    n;
 	const char		*status;
 	char			buf[MAX_REQUEST_SIZE], *pbuf;
 	struct mg_request_info	ri;
@@ -4343,7 +4347,7 @@ static void
 close_socket_gracefully(struct mg_connection *conn, SOCKET sock)
 {
 	char	buf[BUFSIZ];
-	int	n;
+	long	n;
 
 	/* Send FIN to the client */
 	(void) shutdown(sock, SHUT_WR);

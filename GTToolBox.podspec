@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'GTToolBox/**/*.{h,m,mm,c}'
   s.public_header_files = 'GTToolBox/**/*.h'   #公开头文件地址
-  s.frameworks = 'UIKit','CoreGraphics','Foundation','libc.tbd','SystemConfiguration','CFNetwork'
+  s.frameworks = 'UIKit','Foundation','libc.tbd','SystemConfiguration','CFNetwork'
 end

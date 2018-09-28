@@ -24,9 +24,9 @@ static struct sockaddr_in toAddr;
 
 #pragma mark -- 添加于 高文明
 
-int sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, int sendPort)
+long sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, int sendPort)
 {
-    int slen;
+    long slen;
     //   bzero ( &toAddr, sizeof(toAddr) );
     memset(&toAddr, 0, sizeof(toAddr));
     toAddr.sin_family = AF_INET;
@@ -41,9 +41,9 @@ int sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, i
 }
 
 
-int sendUDPToAddress(unsigned char *data, int len, const char *address)
+long sendUDPToAddress(unsigned char *data, int len, const char *address)
 {
-    int slen;
+    long slen;
     
 	   //   bzero ( &toAddr, sizeof(toAddr) );
     memset(&toAddr, 0, sizeof(toAddr));
@@ -60,9 +60,9 @@ int sendUDPToAddress(unsigned char *data, int len, const char *address)
 
 
 
-int sendUDP(unsigned char *data, int len)
+long sendUDP(unsigned char *data, int len)
 {
-	  int slen;
+    long slen;
 	  
 	   //   bzero ( &toAddr, sizeof(toAddr) ); 
     memset(&toAddr, 0, sizeof(toAddr));
@@ -77,13 +77,13 @@ int sendUDP(unsigned char *data, int len)
     return slen;
 }
 
-int recvUDP(unsigned char *data, int len)
+long recvUDP(unsigned char *data, int len)
 {
-	  int nOn;
-	  int rlen;
-	  struct sockaddr_in fromAddr;
+    unsigned int nOn;
+    long rlen;
+    struct sockaddr_in fromAddr;
     
-	  nOn = sizeof(struct sockaddr);
+    nOn = sizeof(struct sockaddr);
     rlen = recvfrom(sockfd, data, len, 0, (struct sockaddr *)&fromAddr, &nOn);
     
     

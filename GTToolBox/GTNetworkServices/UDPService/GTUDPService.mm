@@ -18,10 +18,10 @@
 extern "C" {
     extern int initUDP();
     extern int initUDPWithPoints(int sendPoint,int recivePoint);
-    extern int sendUDP(unsigned char *data, int len);
-    extern int sendUDPToAddress(unsigned char *data, int len, const char *address);
-    extern int sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, int sendPort);
-    extern int recvUDP(unsigned char *data, int len);
+    extern long sendUDP(unsigned char *data, int len);
+    extern long sendUDPToAddress(unsigned char *data, int len, const char *address);
+    extern long sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, int sendPort);
+    extern long recvUDP(unsigned char *data, int len);
     extern void closeUDP();
 };
 
@@ -67,7 +67,6 @@ extern "C" {
     
     dispatch_async(_recvDisPathQueuel, ^{
         [self reciveUDPData];
-        NSLog(@"\nUDP 侦听 已开启\n发送端口：%d\n接收端口：%d",_udpSendPort,_udpRecivePort);
     });
 }
 - (void)stopUDP
@@ -144,7 +143,7 @@ extern "C" {
 {
     NSLog(@"当前线程 %@",[NSThread currentThread].name);
     
-    int rlen;
+    long rlen;
     unsigned char data[1024];
     NSData *msgData;
     NSString* str;
@@ -171,8 +170,8 @@ extern "C" {
 - (void)handleReceiveUDPDataWithReceiveUDPData:(GTUDPDataExchangeModel *)receiveUDPData
 {
     dispatch_async(dispatch_get_main_queue(), ^{
-        if (_delegate && [_delegate respondsToSelector:@selector(reciveUDPDataWithUDPDataExchangeModel:)]) {
-            [_delegate reciveUDPDataWithUDPDataExchangeModel:receiveUDPData];
+        if (self.delegate && [self.delegate respondsToSelector:@selector(reciveUDPDataWithUDPDataExchangeModel:)]) {
+            [self.delegate reciveUDPDataWithUDPDataExchangeModel:receiveUDPData];
         }
     });
 }
