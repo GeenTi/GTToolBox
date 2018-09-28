@@ -24,6 +24,7 @@
 		FB56E8F9215E33F000544E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56E8F8215E33F000544E6B /* Foundation.framework */; };
 		FB56E8FD215E35C200544E6B /* GTDataUntills.m in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8FB215E35C200544E6B /* GTDataUntills.m */; };
 		FB56E8FE215E35C200544E6B /* GTDataUntills.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8FC215E35C200544E6B /* GTDataUntills.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E900215E4D1800544E6B /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56E8FF215E4D1800544E6B /* libc.tbd */; };
 		FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */; };
 		FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */; };
 		FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB81D655207A2E0B00139E66 /* GTEncryption.mm */; };
@@ -68,6 +69,7 @@
 		FB56E8F8215E33F000544E6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FB56E8FB215E35C200544E6B /* GTDataUntills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDataUntills.m; sourceTree = "<group>"; };
 		FB56E8FC215E35C200544E6B /* GTDataUntills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDataUntills.h; sourceTree = "<group>"; };
+		FB56E8FF215E4D1800544E6B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBase.c; sourceTree = "<group>"; };
 		FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionMDFive.c; sourceTree = "<group>"; };
 		FB81D655207A2E0B00139E66 /* GTEncryption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTEncryption.mm; sourceTree = "<group>"; };
@@ -79,7 +81,6 @@
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDefines.h; sourceTree = "<group>"; };
-		FBD7FF521FB9569E00F2B06B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCategorys.h; sourceTree = "<group>"; };
 		FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTEXPand.m"; sourceTree = "<group>"; };
 		FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GTEXPand.m"; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB56E900215E4D1800544E6B /* libc.tbd in Frameworks */,
 				FB56E8F9215E33F000544E6B /* Foundation.framework in Frameworks */,
 				FB56E8F7215E33EB00544E6B /* CFNetwork.framework in Frameworks */,
 				FB56E8F5215E33E300544E6B /* SystemConfiguration.framework in Frameworks */,
@@ -229,10 +231,10 @@
 		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB56E8FF215E4D1800544E6B /* libc.tbd */,
 				FB56E8F8215E33F000544E6B /* Foundation.framework */,
 				FB56E8F6215E33EB00544E6B /* CFNetwork.framework */,
 				FB56E8F4215E33E300544E6B /* SystemConfiguration.framework */,
-				FBD7FF521FB9569E00F2B06B /* libc.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,6 +506,7 @@
 		FBA02C561FB58F2400A78EEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
@@ -516,6 +519,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geenti.GTToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -527,6 +531,7 @@
 		FBA02C571FB58F2400A78EEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CODE_SIGN_STYLE = Manual;
@@ -539,6 +544,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geenti.GTToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

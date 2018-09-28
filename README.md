@@ -4,3 +4,5 @@ iOSApp Develop Tools
 * libc.tbd
 * SystemConfiguration.framework
 * CFNetwork.framework
+* UIKit
+* Foundation
