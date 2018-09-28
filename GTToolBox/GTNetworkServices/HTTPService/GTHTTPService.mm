@@ -166,10 +166,10 @@ void reciveHttpServiceUrlParmar(struct mg_connection *connection, const struct m
     NSMutableString *deskey = [[NSMutableString alloc] init];
     NSArray *strings = [ipaddress componentsSeparatedByString:@"."];
     for (int i = 0; i < 4; i++) {
-        [deskey appendFormat:@"%ld",[strings[i] integerValue]];
+        [deskey appendFormat:@"%ld",(long)[strings[i] integerValue]];
     }
     
-    return [deskey stringByReplacingOccurrencesOfString:deskey withString:[NSString stringWithFormat:@"%ld",[deskey integerValue] -1024]] ;
+    return [deskey stringByReplacingOccurrencesOfString:deskey withString:[NSString stringWithFormat:@"%ld",(long)[deskey integerValue] -1024]] ;
 }
 
 @end
