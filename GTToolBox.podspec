@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "GTToolBox"
-  s.version          = "1.1.2"
+  s.version          = "1.1.3"
   s.summary          = "iOS App ToolBox"
   s.description      = <<-DESC
                        GTToolBox is a tool library to facilitate the development of their own iOSApp, written in Object-C, only supports iOS10.0 and later.
@@ -18,5 +18,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'GTToolBox/**/*.{h,m,mm,c}'
   s.public_header_files = 'GTToolBox/**/*.h'   #公开头文件地址
-  s.frameworks = 'UIKit','CoreGraphics','Foundation'
+  s.frameworks = 'UIKit','CoreGraphics','Foundation','libc.tbd','SystemConfiguration','CFNetwork'
 end

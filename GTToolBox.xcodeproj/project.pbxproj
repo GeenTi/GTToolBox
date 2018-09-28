@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB56E8E8215E308300544E6B /* GTNetWorkUntils.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8D7215E308300544E6B /* GTNetWorkUntils.mm */; };
+		FB56E8E9215E308300544E6B /* GTNetWorkUntils.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8D8215E308300544E6B /* GTNetWorkUntils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E8EA215E308300544E6B /* mongoose.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8DB215E308300544E6B /* mongoose.h */; };
+		FB56E8EB215E308300544E6B /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8DC215E308300544E6B /* udp.c */; };
+		FB56E8EC215E308300544E6B /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8DD215E308300544E6B /* mongoose.c */; };
+		FB56E8ED215E308300544E6B /* GTUDPDataExchangeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8E0215E308300544E6B /* GTUDPDataExchangeModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E8EE215E308300544E6B /* GTUDPDataExchangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8E1215E308300544E6B /* GTUDPDataExchangeModel.m */; };
+		FB56E8EF215E308300544E6B /* GTUDPService.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8E2215E308300544E6B /* GTUDPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E8F0215E308300544E6B /* GTUDPService.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8E3215E308300544E6B /* GTUDPService.mm */; };
+		FB56E8F1215E308300544E6B /* GTHTTPService.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8E5215E308300544E6B /* GTHTTPService.mm */; };
+		FB56E8F2215E308300544E6B /* GTHTTPService.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8E6215E308300544E6B /* GTHTTPService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E8F3215E308300544E6B /* GTNetworkServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8E7215E308300544E6B /* GTNetworkServices.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB56E8F5215E33E300544E6B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56E8F4215E33E300544E6B /* SystemConfiguration.framework */; };
+		FB56E8F7215E33EB00544E6B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56E8F6215E33EB00544E6B /* CFNetwork.framework */; };
+		FB56E8F9215E33F000544E6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB56E8F8215E33F000544E6B /* Foundation.framework */; };
+		FB56E8FD215E35C200544E6B /* GTDataUntills.m in Sources */ = {isa = PBXBuildFile; fileRef = FB56E8FB215E35C200544E6B /* GTDataUntills.m */; };
+		FB56E8FE215E35C200544E6B /* GTDataUntills.h in Headers */ = {isa = PBXBuildFile; fileRef = FB56E8FC215E35C200544E6B /* GTDataUntills.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */; };
 		FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */; };
 		FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB81D655207A2E0B00139E66 /* GTEncryption.mm */; };
@@ -34,6 +51,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB56E8D7215E308300544E6B /* GTNetWorkUntils.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTNetWorkUntils.mm; sourceTree = "<group>"; };
+		FB56E8D8215E308300544E6B /* GTNetWorkUntils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetWorkUntils.h; sourceTree = "<group>"; };
+		FB56E8DB215E308300544E6B /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		FB56E8DC215E308300544E6B /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		FB56E8DD215E308300544E6B /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		FB56E8E0215E308300544E6B /* GTUDPDataExchangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUDPDataExchangeModel.h; sourceTree = "<group>"; };
+		FB56E8E1215E308300544E6B /* GTUDPDataExchangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUDPDataExchangeModel.m; sourceTree = "<group>"; };
+		FB56E8E2215E308300544E6B /* GTUDPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUDPService.h; sourceTree = "<group>"; };
+		FB56E8E3215E308300544E6B /* GTUDPService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTUDPService.mm; sourceTree = "<group>"; };
+		FB56E8E5215E308300544E6B /* GTHTTPService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTHTTPService.mm; sourceTree = "<group>"; };
+		FB56E8E6215E308300544E6B /* GTHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTHTTPService.h; sourceTree = "<group>"; };
+		FB56E8E7215E308300544E6B /* GTNetworkServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetworkServices.h; sourceTree = "<group>"; };
+		FB56E8F4215E33E300544E6B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FB56E8F6215E33EB00544E6B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FB56E8F8215E33F000544E6B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FB56E8FB215E35C200544E6B /* GTDataUntills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDataUntills.m; sourceTree = "<group>"; };
+		FB56E8FC215E35C200544E6B /* GTDataUntills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDataUntills.h; sourceTree = "<group>"; };
 		FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBase.c; sourceTree = "<group>"; };
 		FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionMDFive.c; sourceTree = "<group>"; };
 		FB81D655207A2E0B00139E66 /* GTEncryption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTEncryption.mm; sourceTree = "<group>"; };
@@ -68,12 +102,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB56E8F9215E33F000544E6B /* Foundation.framework in Frameworks */,
+				FB56E8F7215E33EB00544E6B /* CFNetwork.framework in Frameworks */,
+				FB56E8F5215E33E300544E6B /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB56E8D6215E308300544E6B /* ZXNetWorkUntils */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8D7215E308300544E6B /* GTNetWorkUntils.mm */,
+				FB56E8D8215E308300544E6B /* GTNetWorkUntils.h */,
+			);
+			path = ZXNetWorkUntils;
+			sourceTree = "<group>";
+		};
+		FB56E8D9215E308300544E6B /* GTNetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8FA215E35C200544E6B /* GTDataUntils */,
+				FB56E8DA215E308300544E6B /* MobileHTTPServerCore */,
+				FB56E8DE215E308300544E6B /* UDPService */,
+				FB56E8E4215E308300544E6B /* HTTPService */,
+				FB56E8E7215E308300544E6B /* GTNetworkServices.h */,
+			);
+			path = GTNetworkServices;
+			sourceTree = "<group>";
+		};
+		FB56E8DA215E308300544E6B /* MobileHTTPServerCore */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8DB215E308300544E6B /* mongoose.h */,
+				FB56E8DC215E308300544E6B /* udp.c */,
+				FB56E8DD215E308300544E6B /* mongoose.c */,
+			);
+			path = MobileHTTPServerCore;
+			sourceTree = "<group>";
+		};
+		FB56E8DE215E308300544E6B /* UDPService */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8DF215E308300544E6B /* UDPServiceModels */,
+				FB56E8E2215E308300544E6B /* GTUDPService.h */,
+				FB56E8E3215E308300544E6B /* GTUDPService.mm */,
+			);
+			path = UDPService;
+			sourceTree = "<group>";
+		};
+		FB56E8DF215E308300544E6B /* UDPServiceModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8E0215E308300544E6B /* GTUDPDataExchangeModel.h */,
+				FB56E8E1215E308300544E6B /* GTUDPDataExchangeModel.m */,
+			);
+			path = UDPServiceModels;
+			sourceTree = "<group>";
+		};
+		FB56E8E4215E308300544E6B /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8E5215E308300544E6B /* GTHTTPService.mm */,
+				FB56E8E6215E308300544E6B /* GTHTTPService.h */,
+			);
+			path = HTTPService;
+			sourceTree = "<group>";
+		};
+		FB56E8FA215E35C200544E6B /* GTDataUntils */ = {
+			isa = PBXGroup;
+			children = (
+				FB56E8FB215E35C200544E6B /* GTDataUntills.m */,
+				FB56E8FC215E35C200544E6B /* GTDataUntills.h */,
+			);
+			path = GTDataUntils;
+			sourceTree = "<group>";
+		};
 		FB81D652207A2DEA00139E66 /* GTEncryption */ = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +217,8 @@
 				FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */,
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
 				FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */,
+				FB56E8D9215E308300544E6B /* GTNetworkServices */,
+				FB56E8D6215E308300544E6B /* ZXNetWorkUntils */,
 				FB81D652207A2DEA00139E66 /* GTEncryption */,
 				FBD7FF541FB97DEB00F2B06B /* GTCategorys */,
 				FBD7FF531FB97CC200F2B06B /* Supporting Files */,
@@ -122,6 +229,9 @@
 		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FB56E8F8215E33F000544E6B /* Foundation.framework */,
+				FB56E8F6215E33EB00544E6B /* CFNetwork.framework */,
+				FB56E8F4215E33E300544E6B /* SystemConfiguration.framework */,
 				FBD7FF521FB9569E00F2B06B /* libc.tbd */,
 			);
 			name = Frameworks;
@@ -162,15 +272,22 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB56E8EA215E308300544E6B /* mongoose.h in Headers */,
 				FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */,
 				FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */,
 				FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */,
 				FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */,
 				FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */,
+				FB56E8EF215E308300544E6B /* GTUDPService.h in Headers */,
+				FB56E8F3215E308300544E6B /* GTNetworkServices.h in Headers */,
+				FB56E8E9215E308300544E6B /* GTNetWorkUntils.h in Headers */,
+				FB56E8ED215E308300544E6B /* GTUDPDataExchangeModel.h in Headers */,
+				FB56E8F2215E308300544E6B /* GTHTTPService.h in Headers */,
 				FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */,
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
+				FB56E8FE215E35C200544E6B /* GTDataUntills.h in Headers */,
 				FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */,
 				FBFB06B12067E18800058143 /* UITextField+GTEXPand.h in Headers */,
 			);
@@ -246,8 +363,14 @@
 			files = (
 				FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */,
 				FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */,
+				FB56E8EC215E308300544E6B /* mongoose.c in Sources */,
+				FB56E8F0215E308300544E6B /* GTUDPService.mm in Sources */,
+				FB56E8EE215E308300544E6B /* GTUDPDataExchangeModel.m in Sources */,
 				FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */,
+				FB56E8F1215E308300544E6B /* GTHTTPService.mm in Sources */,
+				FB56E8EB215E308300544E6B /* udp.c in Sources */,
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
+				FB56E8FD215E35C200544E6B /* GTDataUntills.m in Sources */,
 				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
 				FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */,
 				FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */,
@@ -257,6 +380,7 @@
 				FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */,
 				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
 				FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */,
+				FB56E8E8215E308300544E6B /* GTNetWorkUntils.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +421,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -314,7 +438,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -368,7 +492,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
