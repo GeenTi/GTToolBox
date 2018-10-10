@@ -54,6 +54,7 @@
 
 
 + (void)load {
+    [super load];
     Method systemMethod = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
     SEL sysSEL = @selector(sendAction:to:forEvent:);
     

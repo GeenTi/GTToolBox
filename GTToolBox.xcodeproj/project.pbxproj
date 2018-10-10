@@ -15,6 +15,7 @@
 		FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = FB81D658207A2E0B00139E66 /* GTEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */; };
 		FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA02C501FB58F2400A78EEF /* GTToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB91239216CA91D00EEDD50 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB91238216CA91D00EEDD50 /* libc.tbd */; };
 		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */; };
@@ -44,8 +45,8 @@
 		FBA02C4D1FB58F2400A78EEF /* GTToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB91238216CA91D00EEDD50 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDefines.h; sourceTree = "<group>"; };
-		FBD7FF521FB9569E00F2B06B /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCategorys.h; sourceTree = "<group>"; };
 		FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTEXPand.m"; sourceTree = "<group>"; };
 		FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GTEXPand.m"; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB91239216CA91D00EEDD50 /* libc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +124,7 @@
 		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FBD7FF521FB9569E00F2B06B /* libc.tbd */,
+				FBB91238216CA91D00EEDD50 /* libc.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
