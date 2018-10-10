@@ -30,11 +30,4 @@ typedef enum : NSUInteger {
  */
 - (void)GT_imagePositionStyle:(GTBtnImagePositionStyle)imagePositionStyle spacing:(CGFloat)spacing;
 
-
-/**
- 按钮点击时间间隔
- */
-@property (nonatomic, assign) NSTimeInterval GT_timeInterval;
-
-
 @end
