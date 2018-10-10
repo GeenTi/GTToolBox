@@ -10,9 +10,6 @@
 
 #import <objc/runtime.h>
 
-@interface UIButton ()
-@property (nonatomic, assign) NSTimeInterval temp_timeInterval;
-@end
 
 @implementation UIButton (GTEXPand)
 
@@ -51,48 +48,5 @@
     }
 }
 
-
-
-+ (void)load {
-    Method systemMethod = class_getInstanceMethod(self, @selector(sendAction:to:forEvent:));
-    SEL sysSEL = @selector(sendAction:to:forEvent:);
-    
-    Method SGMethod = class_getInstanceMethod(self, @selector(GT_sendAction:to:forEvent:));
-    SEL SGSEL = @selector(GT_sendAction:to:forEvent:);
-    
-    BOOL addMethod = class_addMethod(self, SGSEL, method_getImplementation(SGMethod), method_getTypeEncoding(SGMethod));
-    if (addMethod) {
-        class_replaceMethod(self, sysSEL, method_getImplementation(systemMethod), method_getTypeEncoding(systemMethod));
-    } else {
-        method_exchangeImplementations(systemMethod, SGMethod);
-    }
-}
-
-- (void)GT_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
-    BOOL needSendAction = (NSDate.date.timeIntervalSince1970 - self.temp_timeInterval >= self.GT_timeInterval);
-    
-    if (self.GT_timeInterval > 0) {
-        self.temp_timeInterval = NSDate.date.timeIntervalSince1970;
-    }
-    
-    if (needSendAction) {
-        [self GT_sendAction:action to:target forEvent:event];
-    }
-}
-
-#pragma mark - - - set、get
-- (void)setGT_timeInterval:(NSTimeInterval)GT_timeInterval {
-    objc_setAssociatedObject(self, "UIButton_GT_timeInterval", @(GT_timeInterval), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-- (NSTimeInterval)GT_timeInterval {
-    return [objc_getAssociatedObject(self, "UIButton_GT_timeInterval") doubleValue];
-}
-
-- (void)setTemp_timeInterval:(NSTimeInterval)temp_timeInterval {
-    objc_setAssociatedObject(self, "UIButton_temp_timeInterval", @(temp_timeInterval), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-- (NSTimeInterval)temp_timeInterval {
-    return [objc_getAssociatedObject(self, "UIButton_temp_timeInterval") doubleValue];
-}
 
 @end
