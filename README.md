@@ -14,3 +14,6 @@ iOSApp Develop Tools
 
 ##  1.1.5
 * 修复UIButton类别Block用法冲突
+
+##  1.1.6
+* 修正部分Bug
