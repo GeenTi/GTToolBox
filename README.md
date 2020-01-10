@@ -17,3 +17,4 @@ iOSApp Develop Tools
 
 ##  1.1.6
 * 修正部分Bug
+* 适配至iOS10+ 目前最新sdk13.2
