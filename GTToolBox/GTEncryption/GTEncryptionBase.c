@@ -42,10 +42,10 @@ int encode(char * base64code, const char * src, int src_len)
     char * p64 = base64code;
     int i;
     unsigned long ulTmp;
-    register int b0;
-    register int b1;
-    register int b2;
-    register int b3;
+    int b0;
+    int b1;
+    int b2;
+    int b3;
     int rest;
     int j;
     
@@ -124,9 +124,9 @@ int decode(char * buf, const char * base64code, int src_len)
     char * pbuf = buf;
     int i;
     unsigned long ulTmp;
-    register int b0;
-    register int b1;
-    register int b2;
+    int b0;
+    int b1;
+    int b2;
 //    register int b3;
     int rest;
     int j;

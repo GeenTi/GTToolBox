@@ -12,14 +12,10 @@
 
 @interface NSString (GTEXPand)
 
-/**
- 转换为图片
-
- @param size 大小
- @param backgroupColor 背景颜色
- @param stringColor 文字颜色
- @return 抓换成功的IMG
- */
+/// 转换为图片
+/// @param size 大小
+/// @param backgroupColor 背景颜色
+/// @param stringColor 文字颜色
 - (UIImage *)GT_Convert_To_Image_WithFrame:(CGSize)size BackGroupColor:(UIColor *)backgroupColor StringColor:(UIColor *)stringColor;
 
 @end

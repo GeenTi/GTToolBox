@@ -12,14 +12,9 @@
 #include <string.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <objc/runtime.h>
+#import "GTEncryptionC.h"
 
 
-
-extern "C" {
-    extern int GT_encryptionStr(char *inputStr, char *outputStr, char *keyString);
-    
-    extern int GT_decryptionStr(char *inputStr, char *outputStr, char *keyString);
-};
 
 
 @implementation GTEncryption
