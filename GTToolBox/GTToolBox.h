@@ -20,6 +20,16 @@
 
 #import "GTEncryption.h"
 
+
+//! Project version number for GTToolBox.
+FOUNDATION_EXPORT double GTToolBoxVersionNumber;
+
+//! Project version string for GTToolBox.
+FOUNDATION_EXPORT const unsigned char GTToolBoxVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <GTToolBox/PublicHeader.h>
+
+
 @interface GTToolBox : NSObject
 
 /**

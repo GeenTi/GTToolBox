@@ -8,14 +8,13 @@
 
 #import "GTToolBox.h"
 
-#define kGT_GTToolBox_Version   @"1.1.5"
-
-
 @implementation GTToolBox
 
 + (NSString *)GT_Get_GTToolsBox_Version
 {
-    return kGT_GTToolBox_Version;
+    NSString *app_Version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+
+    return app_Version;
 }
 
 + (CGFloat)GT_GetWidthWithContent:(NSString *)content height:(CGFloat)height font:(CGFloat)font
