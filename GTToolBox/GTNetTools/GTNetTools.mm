@@ -1,5 +1,5 @@
 //
-//  GTNetWorkUntils.mm
+//  GTNetTools.mm
 //  GTToolBox
 //
 //  Created by WMYeah on 15/8/25.
@@ -7,13 +7,14 @@
 //
 
 
-#import "GTNetWorkUntils.h"
+#import "GTNetTools.h"
+
 #import <SystemConfiguration/CaptiveNetwork.h>
 
 
-@implementation GTNetWorkUntils
+@implementation GTNetTools
 
-+ (NSString *)getWifiName
++ (NSString *)gt_get_wifi_name
 {
     NSString *wifiName = nil;
     CFArrayRef wifiInterfaces = CNCopySupportedInterfaces();

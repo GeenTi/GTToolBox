@@ -1,5 +1,5 @@
 //
-//  GTNetWorkUntils.h
+//  GTNetTools.h
 //  GTToolBox
 //
 //  Created by WMYeah on 15/8/25.
@@ -9,12 +9,12 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GTNetWorkUntils : NSObject
+@interface GTNetTools : NSObject
 /*!
  *  获取WIFI 名称
  *
  *  @return WIFI名称字符串
  */
-+ (NSString *)getWifiName;
++ (NSString *)gt_get_wifi_name;
 
 @end

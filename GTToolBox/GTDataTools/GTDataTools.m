@@ -7,10 +7,10 @@
 //
 
 
-#import "GTDataUntills.h"
+#import "GTDataTools.h"
 #import <objc/runtime.h>
 
-@implementation GTDataUntills
+@implementation GTDataTools
 
 + (NSString *)handleObjectTOJsonstringWithObject:(id)object objectClass:(Class)objectClass
 {
@@ -111,7 +111,7 @@
     }
     NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:jsondata options:kNilOptions error:nil];
     
-    id model = [GTDataUntills handleJsonsDicToObjectWithJsonDic:dataDic objectClass:modelclass];
+    id model = [GTDataTools handleJsonsDicToObjectWithJsonDic:dataDic objectClass:modelclass];
     
     return model;
 }

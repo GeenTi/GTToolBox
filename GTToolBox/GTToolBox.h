@@ -20,7 +20,6 @@
 
 #import "GTEncryption.h"
 
-
 @interface GTToolBox : NSObject
 
 /**

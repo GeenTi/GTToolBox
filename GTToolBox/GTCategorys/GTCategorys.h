@@ -13,20 +13,7 @@
 
 #import <UIColor+GTEXPand.h>
 
-#import <UIView+GTEXPand.h>
-
 #import <UILabel+GTExpand.h>
 
 #import <UITextField+GTEXPand.h>
 
-//#import "NSString+GTEXPand.h"
-//
-//#import "UIButton+GTEXPand.h"
-//
-//#import "UIColor+GTEXPand.h"
-//
-//#import "UIView+GTEXPand.h"
-//
-//#import "UILabel+GTExpand.h"
-//
-//#import "UITextField+GTEXPand.h"

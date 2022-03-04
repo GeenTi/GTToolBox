@@ -3,17 +3,46 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB1CF11F27C381CA008ED856 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB1CF11E27C381CA008ED856 /* UIKit.framework */; };
+		FB047BF327D1E681001EECD6 /* mjson.c in Sources */ = {isa = PBXBuildFile; fileRef = FB047BE127D1E680001EECD6 /* mjson.c */; };
+		FB047BF427D1E681001EECD6 /* mongoose.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BE227D1E680001EECD6 /* mongoose.h */; };
+		FB047BF527D1E681001EECD6 /* udp.c in Sources */ = {isa = PBXBuildFile; fileRef = FB047BE327D1E680001EECD6 /* udp.c */; };
+		FB047BF627D1E681001EECD6 /* mongoose.c in Sources */ = {isa = PBXBuildFile; fileRef = FB047BE427D1E680001EECD6 /* mongoose.c */; };
+		FB047BF727D1E681001EECD6 /* mjson.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BE527D1E680001EECD6 /* mjson.h */; };
+		FB047BF927D1E681001EECD6 /* GTUDPService.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB047BE827D1E680001EECD6 /* GTUDPService.mm */; };
+		FB047BFC27D1E681001EECD6 /* GTUDPService.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BEC27D1E680001EECD6 /* GTUDPService.h */; };
+		FB047BFD27D1E681001EECD6 /* GTNetServices.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BED27D1E680001EECD6 /* GTNetServices.h */; };
+		FB047BFE27D1E681001EECD6 /* GTNetTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB047BEE27D1E680001EECD6 /* GTNetTools.mm */; };
+		FB047BFF27D1E681001EECD6 /* GTNetTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BEF27D1E680001EECD6 /* GTNetTools.h */; };
+		FB047C0027D1E681001EECD6 /* GTHTTPService.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB047BF127D1E680001EECD6 /* GTHTTPService.mm */; };
+		FB047C0127D1E681001EECD6 /* GTHTTPService.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047BF227D1E680001EECD6 /* GTHTTPService.h */; };
+		FB047C0427D1E6C5001EECD6 /* GTUDPDataExchangeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = FB047C0227D1E6C5001EECD6 /* GTUDPDataExchangeModel.m */; };
+		FB047C0527D1E6C5001EECD6 /* GTUDPDataExchangeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047C0327D1E6C5001EECD6 /* GTUDPDataExchangeModel.h */; };
+		FB047C0927D1E6E6001EECD6 /* GTDataTools.m in Sources */ = {isa = PBXBuildFile; fileRef = FB047C0727D1E6E5001EECD6 /* GTDataTools.m */; };
+		FB047C0A27D1E6E6001EECD6 /* GTDataTools.h in Headers */ = {isa = PBXBuildFile; fileRef = FB047C0827D1E6E5001EECD6 /* GTDataTools.h */; };
+		FB047C0C27D1E840001EECD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C0B27D1E840001EECD6 /* Foundation.framework */; };
+		FB047C0E27D1E850001EECD6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C0D27D1E850001EECD6 /* SystemConfiguration.framework */; };
+		FB047C1027D1E85B001EECD6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C0F27D1E85B001EECD6 /* UIKit.framework */; };
+		FB047C1227D1E863001EECD6 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C1127D1E863001EECD6 /* CFNetwork.framework */; };
+		FB047C1427D1E86A001EECD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C1327D1E86A001EECD6 /* CoreGraphics.framework */; };
+		FB047C1627D1E879001EECD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB047C1527D1E879001EECD6 /* QuartzCore.framework */; };
+		FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */; };
+		FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */; };
 		FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */ = {isa = PBXBuildFile; fileRef = FB81D655207A2E0B00139E66 /* GTEncryption.mm */; };
+		FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */; };
+		FB81D65E207A2E0B00139E66 /* GTEncryptionDes.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */; };
 		FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */ = {isa = PBXBuildFile; fileRef = FB81D658207A2E0B00139E66 /* GTEncryption.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */; };
 		FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA02C501FB58F2400A78EEF /* GTToolBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB91239216CA91D00EEDD50 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FBB91238216CA91D00EEDD50 /* libc.tbd */; };
 		FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */; };
+		FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */; };
+		FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */; };
 		FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -21,20 +50,6 @@
 		FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */; };
 		FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBF7E42227C388460094CFA8 /* NSString+GTEXPand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E42027C388460094CFA8 /* NSString+GTEXPand.m */; };
-		FBF7E42327C388460094CFA8 /* NSString+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF7E42127C388460094CFA8 /* NSString+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBF7E42527C38CBF0094CFA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E42427C38CBF0094CFA8 /* Foundation.framework */; };
-		FBF7E42727C38CCF0094CFA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E42627C38CCF0094CFA8 /* SystemConfiguration.framework */; };
-		FBF7E42927C38CDC0094CFA8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E42827C38CDC0094CFA8 /* CFNetwork.framework */; };
-		FBF7E42B27C38CE70094CFA8 /* libc.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E42A27C38CE70094CFA8 /* libc.tbd */; };
-		FBF7E43127C38E610094CFA8 /* GTEncryptionDes.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E42C27C38E610094CFA8 /* GTEncryptionDes.c */; };
-		FBF7E43227C38E610094CFA8 /* GTEncryptionBaseFunc.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E42D27C38E610094CFA8 /* GTEncryptionBaseFunc.c */; };
-		FBF7E43327C38E610094CFA8 /* GTEncryptionMDFive.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E42E27C38E610094CFA8 /* GTEncryptionMDFive.c */; };
-		FBF7E43427C38E610094CFA8 /* GTEncryptionSec.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E42F27C38E610094CFA8 /* GTEncryptionSec.c */; };
-		FBF7E43527C38E610094CFA8 /* GTEncryptionBase.c in Sources */ = {isa = PBXBuildFile; fileRef = FBF7E43027C38E610094CFA8 /* GTEncryptionBase.c */; };
-		FBF7E45627C3A5D10094CFA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E45527C3A5D10094CFA8 /* CoreGraphics.framework */; };
-		FBF7E45A27C3A6B00094CFA8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBF7E45927C3A6B00094CFA8 /* QuartzCore.framework */; };
-		FBF7E45C27C3A7230094CFA8 /* GTEncryptionC.h in Headers */ = {isa = PBXBuildFile; fileRef = FBF7E45B27C3A7230094CFA8 /* GTEncryptionC.h */; };
 		FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */ = {isa = PBXBuildFile; fileRef = FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */; };
 		FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBFB06B12067E18800058143 /* UITextField+GTEXPand.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFB06AF2067E18800058143 /* UITextField+GTEXPand.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,15 +57,44 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FB1CF11E27C381CA008ED856 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FB047BE127D1E680001EECD6 /* mjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mjson.c; sourceTree = "<group>"; };
+		FB047BE227D1E680001EECD6 /* mongoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoose.h; sourceTree = "<group>"; };
+		FB047BE327D1E680001EECD6 /* udp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udp.c; sourceTree = "<group>"; };
+		FB047BE427D1E680001EECD6 /* mongoose.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoose.c; sourceTree = "<group>"; };
+		FB047BE527D1E680001EECD6 /* mjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjson.h; sourceTree = "<group>"; };
+		FB047BE827D1E680001EECD6 /* GTUDPService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTUDPService.mm; sourceTree = "<group>"; };
+		FB047BEC27D1E680001EECD6 /* GTUDPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUDPService.h; sourceTree = "<group>"; };
+		FB047BED27D1E680001EECD6 /* GTNetServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetServices.h; sourceTree = "<group>"; };
+		FB047BEE27D1E680001EECD6 /* GTNetTools.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTNetTools.mm; sourceTree = "<group>"; };
+		FB047BEF27D1E680001EECD6 /* GTNetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTNetTools.h; sourceTree = "<group>"; };
+		FB047BF127D1E680001EECD6 /* GTHTTPService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTHTTPService.mm; sourceTree = "<group>"; };
+		FB047BF227D1E680001EECD6 /* GTHTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTHTTPService.h; sourceTree = "<group>"; };
+		FB047C0227D1E6C5001EECD6 /* GTUDPDataExchangeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTUDPDataExchangeModel.m; sourceTree = "<group>"; };
+		FB047C0327D1E6C5001EECD6 /* GTUDPDataExchangeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTUDPDataExchangeModel.h; sourceTree = "<group>"; };
+		FB047C0727D1E6E5001EECD6 /* GTDataTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTDataTools.m; sourceTree = "<group>"; };
+		FB047C0827D1E6E5001EECD6 /* GTDataTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTDataTools.h; sourceTree = "<group>"; };
+		FB047C0B27D1E840001EECD6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FB047C0D27D1E850001EECD6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		FB047C0F27D1E85B001EECD6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FB047C1127D1E863001EECD6 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		FB047C1327D1E86A001EECD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		FB047C1527D1E879001EECD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBase.c; sourceTree = "<group>"; };
+		FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionMDFive.c; sourceTree = "<group>"; };
 		FB81D655207A2E0B00139E66 /* GTEncryption.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GTEncryption.mm; sourceTree = "<group>"; };
+		FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionSec.c; sourceTree = "<group>"; };
+		FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionDes.c; sourceTree = "<group>"; };
 		FB81D658207A2E0B00139E66 /* GTEncryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTEncryption.h; sourceTree = "<group>"; };
+		FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBaseFunc.c; sourceTree = "<group>"; };
 		FBA02C4D1FB58F2400A78EEF /* GTToolBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GTToolBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA02C501FB58F2400A78EEF /* GTToolBox.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTToolBox.h; sourceTree = "<group>"; };
 		FBA02C511FB58F2400A78EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB91238216CA91D00EEDD50 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = usr/lib/libc.tbd; sourceTree = SDKROOT; };
 		FBD7FF4A1FB9540D00F2B06B /* GTAppDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTAppDefines.h; sourceTree = "<group>"; };
 		FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTCategorys.h; sourceTree = "<group>"; };
 		FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GTEXPand.m"; sourceTree = "<group>"; };
+		FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GTEXPand.m"; sourceTree = "<group>"; };
+		FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GTEXPand.h"; sourceTree = "<group>"; };
 		FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GTEXPand.h"; sourceTree = "<group>"; };
 		FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = GTToolBox.mm; sourceTree = "<group>"; };
 		FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+GTEXPand.h"; sourceTree = "<group>"; };
@@ -58,20 +102,6 @@
 		FBF734BD1FBA9D370040CE76 /* UIView+GTEXPand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GTEXPand.h"; sourceTree = "<group>"; };
 		FBF734BE1FBA9D370040CE76 /* UIView+GTEXPand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GTEXPand.m"; sourceTree = "<group>"; };
 		FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTFuncExtension.h; sourceTree = "<group>"; };
-		FBF7E42027C388460094CFA8 /* NSString+GTEXPand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+GTEXPand.m"; sourceTree = "<group>"; };
-		FBF7E42127C388460094CFA8 /* NSString+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+GTEXPand.h"; sourceTree = "<group>"; };
-		FBF7E42427C38CBF0094CFA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		FBF7E42627C38CCF0094CFA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		FBF7E42827C38CDC0094CFA8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		FBF7E42A27C38CE70094CFA8 /* libc.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libc.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/lib/libc.tbd; sourceTree = DEVELOPER_DIR; };
-		FBF7E42C27C38E610094CFA8 /* GTEncryptionDes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionDes.c; sourceTree = "<group>"; };
-		FBF7E42D27C38E610094CFA8 /* GTEncryptionBaseFunc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBaseFunc.c; sourceTree = "<group>"; };
-		FBF7E42E27C38E610094CFA8 /* GTEncryptionMDFive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionMDFive.c; sourceTree = "<group>"; };
-		FBF7E42F27C38E610094CFA8 /* GTEncryptionSec.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionSec.c; sourceTree = "<group>"; };
-		FBF7E43027C38E610094CFA8 /* GTEncryptionBase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GTEncryptionBase.c; sourceTree = "<group>"; };
-		FBF7E45527C3A5D10094CFA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		FBF7E45927C3A6B00094CFA8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		FBF7E45B27C3A7230094CFA8 /* GTEncryptionC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GTEncryptionC.h; sourceTree = "<group>"; };
 		FBFB06742067C5CB00058143 /* UILabel+GTExpand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+GTExpand.m"; sourceTree = "<group>"; };
 		FBFB06752067C5CC00058143 /* UILabel+GTExpand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+GTExpand.h"; sourceTree = "<group>"; };
 		FBFB06AF2067E18800058143 /* UITextField+GTEXPand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+GTEXPand.h"; sourceTree = "<group>"; };
@@ -83,30 +113,83 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBF7E45A27C3A6B00094CFA8 /* QuartzCore.framework in Frameworks */,
-				FBF7E45627C3A5D10094CFA8 /* CoreGraphics.framework in Frameworks */,
-				FBF7E42B27C38CE70094CFA8 /* libc.tbd in Frameworks */,
-				FBF7E42927C38CDC0094CFA8 /* CFNetwork.framework in Frameworks */,
-				FBF7E42727C38CCF0094CFA8 /* SystemConfiguration.framework in Frameworks */,
-				FBF7E42527C38CBF0094CFA8 /* Foundation.framework in Frameworks */,
-				FB1CF11F27C381CA008ED856 /* UIKit.framework in Frameworks */,
+				FB047C1627D1E879001EECD6 /* QuartzCore.framework in Frameworks */,
+				FB047C1427D1E86A001EECD6 /* CoreGraphics.framework in Frameworks */,
+				FB047C1227D1E863001EECD6 /* CFNetwork.framework in Frameworks */,
+				FB047C1027D1E85B001EECD6 /* UIKit.framework in Frameworks */,
+				FB047C0E27D1E850001EECD6 /* SystemConfiguration.framework in Frameworks */,
+				FB047C0C27D1E840001EECD6 /* Foundation.framework in Frameworks */,
+				FBB91239216CA91D00EEDD50 /* libc.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB047BDF27D1E680001EECD6 /* GTNetTools */ = {
+			isa = PBXGroup;
+			children = (
+				FB047BEF27D1E680001EECD6 /* GTNetTools.h */,
+				FB047BEE27D1E680001EECD6 /* GTNetTools.mm */,
+				FB047BED27D1E680001EECD6 /* GTNetServices.h */,
+				FB047BE027D1E680001EECD6 /* GTNetToolsCore */,
+				FB047BE727D1E680001EECD6 /* UDPService */,
+				FB047BF027D1E680001EECD6 /* HTTPService */,
+			);
+			path = GTNetTools;
+			sourceTree = "<group>";
+		};
+		FB047BE027D1E680001EECD6 /* GTNetToolsCore */ = {
+			isa = PBXGroup;
+			children = (
+				FB047BE127D1E680001EECD6 /* mjson.c */,
+				FB047BE227D1E680001EECD6 /* mongoose.h */,
+				FB047BE327D1E680001EECD6 /* udp.c */,
+				FB047BE427D1E680001EECD6 /* mongoose.c */,
+				FB047BE527D1E680001EECD6 /* mjson.h */,
+			);
+			path = GTNetToolsCore;
+			sourceTree = "<group>";
+		};
+		FB047BE727D1E680001EECD6 /* UDPService */ = {
+			isa = PBXGroup;
+			children = (
+				FB047BE827D1E680001EECD6 /* GTUDPService.mm */,
+				FB047BEC27D1E680001EECD6 /* GTUDPService.h */,
+				FB047C0327D1E6C5001EECD6 /* GTUDPDataExchangeModel.h */,
+				FB047C0227D1E6C5001EECD6 /* GTUDPDataExchangeModel.m */,
+			);
+			path = UDPService;
+			sourceTree = "<group>";
+		};
+		FB047BF027D1E680001EECD6 /* HTTPService */ = {
+			isa = PBXGroup;
+			children = (
+				FB047BF127D1E680001EECD6 /* GTHTTPService.mm */,
+				FB047BF227D1E680001EECD6 /* GTHTTPService.h */,
+			);
+			path = HTTPService;
+			sourceTree = "<group>";
+		};
+		FB047C0627D1E6E5001EECD6 /* GTDataTools */ = {
+			isa = PBXGroup;
+			children = (
+				FB047C0727D1E6E5001EECD6 /* GTDataTools.m */,
+				FB047C0827D1E6E5001EECD6 /* GTDataTools.h */,
+			);
+			path = GTDataTools;
+			sourceTree = "<group>";
+		};
 		FB81D652207A2DEA00139E66 /* GTEncryption */ = {
 			isa = PBXGroup;
 			children = (
 				FB81D658207A2E0B00139E66 /* GTEncryption.h */,
 				FB81D655207A2E0B00139E66 /* GTEncryption.mm */,
-				FBF7E45B27C3A7230094CFA8 /* GTEncryptionC.h */,
-				FBF7E43027C38E610094CFA8 /* GTEncryptionBase.c */,
-				FBF7E42D27C38E610094CFA8 /* GTEncryptionBaseFunc.c */,
-				FBF7E42C27C38E610094CFA8 /* GTEncryptionDes.c */,
-				FBF7E42E27C38E610094CFA8 /* GTEncryptionMDFive.c */,
-				FBF7E42F27C38E610094CFA8 /* GTEncryptionSec.c */,
+				FB81D653207A2E0B00139E66 /* GTEncryptionBase.c */,
+				FB81D659207A2E0B00139E66 /* GTEncryptionBaseFunc.c */,
+				FB81D657207A2E0B00139E66 /* GTEncryptionDes.c */,
+				FB81D654207A2E0B00139E66 /* GTEncryptionMDFive.c */,
+				FB81D656207A2E0B00139E66 /* GTEncryptionSec.c */,
 			);
 			path = GTEncryption;
 			sourceTree = "<group>";
@@ -135,6 +218,8 @@
 				FBF734C11FBA9E050040CE76 /* GTFuncExtension.h */,
 				FBA02C501FB58F2400A78EEF /* GTToolBox.h */,
 				FBD7FF7B1FB9813A00F2B06B /* GTToolBox.mm */,
+				FB047C0627D1E6E5001EECD6 /* GTDataTools */,
+				FB047BDF27D1E680001EECD6 /* GTNetTools */,
 				FB81D652207A2DEA00139E66 /* GTEncryption */,
 				FBD7FF541FB97DEB00F2B06B /* GTCategorys */,
 				FBD7FF531FB97CC200F2B06B /* Supporting Files */,
@@ -145,13 +230,13 @@
 		FBD7FF511FB9569E00F2B06B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FBF7E45927C3A6B00094CFA8 /* QuartzCore.framework */,
-				FBF7E45527C3A5D10094CFA8 /* CoreGraphics.framework */,
-				FBF7E42A27C38CE70094CFA8 /* libc.tbd */,
-				FBF7E42827C38CDC0094CFA8 /* CFNetwork.framework */,
-				FBF7E42627C38CCF0094CFA8 /* SystemConfiguration.framework */,
-				FBF7E42427C38CBF0094CFA8 /* Foundation.framework */,
-				FB1CF11E27C381CA008ED856 /* UIKit.framework */,
+				FB047C1527D1E879001EECD6 /* QuartzCore.framework */,
+				FB047C1327D1E86A001EECD6 /* CoreGraphics.framework */,
+				FB047C1127D1E863001EECD6 /* CFNetwork.framework */,
+				FB047C0F27D1E85B001EECD6 /* UIKit.framework */,
+				FB047C0D27D1E850001EECD6 /* SystemConfiguration.framework */,
+				FB047C0B27D1E840001EECD6 /* Foundation.framework */,
+				FBB91238216CA91D00EEDD50 /* libc.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,10 +253,10 @@
 			isa = PBXGroup;
 			children = (
 				FBD7FF561FB97DEB00F2B06B /* GTCategorys.h */,
-				FBF7E42127C388460094CFA8 /* NSString+GTEXPand.h */,
-				FBF7E42027C388460094CFA8 /* NSString+GTEXPand.m */,
 				FBFB06AF2067E18800058143 /* UITextField+GTEXPand.h */,
 				FBFB06B02067E18800058143 /* UITextField+GTEXPand.m */,
+				FBD7FF751FB9803500F2B06B /* NSString+GTEXPand.h */,
+				FBD7FF741FB9803500F2B06B /* NSString+GTEXPand.m */,
 				FBD7FF761FB9803500F2B06B /* UIButton+GTEXPand.h */,
 				FBD7FF731FB9803400F2B06B /* UIButton+GTEXPand.m */,
 				FBD7FF7D1FB9824500F2B06B /* UIColor+GTEXPand.h */,
@@ -191,18 +276,25 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB047C0127D1E681001EECD6 /* GTHTTPService.h in Headers */,
 				FBD7FF4B1FB9540D00F2B06B /* GTAppDefines.h in Headers */,
+				FB047BFF27D1E681001EECD6 /* GTNetTools.h in Headers */,
 				FBD7FF651FB97DEB00F2B06B /* GTCategorys.h in Headers */,
-				FBF7E45C27C3A7230094CFA8 /* GTEncryptionC.h in Headers */,
 				FBD7FF7A1FB9803500F2B06B /* UIButton+GTEXPand.h in Headers */,
+				FB047C0A27D1E6E6001EECD6 /* GTDataTools.h in Headers */,
+				FB047BF727D1E681001EECD6 /* mjson.h in Headers */,
+				FBD7FF791FB9803500F2B06B /* NSString+GTEXPand.h in Headers */,
 				FBF734C21FBA9E050040CE76 /* GTFuncExtension.h in Headers */,
 				FBF734BF1FBA9D370040CE76 /* UIView+GTEXPand.h in Headers */,
+				FB047BFC27D1E681001EECD6 /* GTUDPService.h in Headers */,
 				FBD7FF7F1FB9824500F2B06B /* UIColor+GTEXPand.h in Headers */,
 				FBFB06772067C5CC00058143 /* UILabel+GTExpand.h in Headers */,
 				FBA02C521FB58F2400A78EEF /* GTToolBox.h in Headers */,
+				FB047C0527D1E6C5001EECD6 /* GTUDPDataExchangeModel.h in Headers */,
 				FB81D65F207A2E0B00139E66 /* GTEncryption.h in Headers */,
-				FBF7E42327C388460094CFA8 /* NSString+GTEXPand.h in Headers */,
 				FBFB06B12067E18800058143 /* UITextField+GTEXPand.h in Headers */,
+				FB047BF427D1E681001EECD6 /* mongoose.h in Headers */,
+				FB047BFD27D1E681001EECD6 /* GTNetServices.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +325,7 @@
 		FBA02C441FB58F2400A78EEF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GT;
 				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = GeenTi;
 				TargetAttributes = {
@@ -243,7 +336,7 @@
 				};
 			};
 			buildConfigurationList = FBA02C471FB58F2400A78EEF /* Build configuration list for PBXProject "GTToolBox" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -275,19 +368,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB047C0027D1E681001EECD6 /* GTHTTPService.mm in Sources */,
 				FBD7FF801FB9824500F2B06B /* UIColor+GTEXPand.m in Sources */,
-				FBF7E43127C38E610094CFA8 /* GTEncryptionDes.c in Sources */,
 				FBD7FF7C1FB9813A00F2B06B /* GTToolBox.mm in Sources */,
-				FBF7E43327C38E610094CFA8 /* GTEncryptionMDFive.c in Sources */,
+				FB047BF627D1E681001EECD6 /* mongoose.c in Sources */,
 				FB81D65C207A2E0B00139E66 /* GTEncryption.mm in Sources */,
-				FBF7E43527C38E610094CFA8 /* GTEncryptionBase.c in Sources */,
-				FBF7E42227C388460094CFA8 /* NSString+GTEXPand.m in Sources */,
+				FB047BF927D1E681001EECD6 /* GTUDPService.mm in Sources */,
+				FB047BF527D1E681001EECD6 /* udp.c in Sources */,
 				FBD7FF771FB9803500F2B06B /* UIButton+GTEXPand.m in Sources */,
-				FBF7E43427C38E610094CFA8 /* GTEncryptionSec.c in Sources */,
-				FBF7E43227C38E610094CFA8 /* GTEncryptionBaseFunc.c in Sources */,
+				FB047C0927D1E6E6001EECD6 /* GTDataTools.m in Sources */,
+				FB047BFE27D1E681001EECD6 /* GTNetTools.mm in Sources */,
+				FBD7FF781FB9803500F2B06B /* NSString+GTEXPand.m in Sources */,
+				FB81D65D207A2E0B00139E66 /* GTEncryptionSec.c in Sources */,
+				FB81D660207A2E0B00139E66 /* GTEncryptionBaseFunc.c in Sources */,
+				FB81D65B207A2E0B00139E66 /* GTEncryptionMDFive.c in Sources */,
+				FB81D65E207A2E0B00139E66 /* GTEncryptionDes.c in Sources */,
 				FBFB06B22067E18800058143 /* UITextField+GTEXPand.m in Sources */,
 				FBFB06762067C5CC00058143 /* UILabel+GTExpand.m in Sources */,
+				FB047BF327D1E681001EECD6 /* mjson.c in Sources */,
+				FB047C0427D1E6C5001EECD6 /* GTUDPDataExchangeModel.m in Sources */,
 				FBF734C01FBA9D370040CE76 /* UIView+GTEXPand.m in Sources */,
+				FB81D65A207A2E0B00139E66 /* GTEncryptionBase.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +435,6 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -347,11 +447,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = " \"$(SRCROOT)/\"    ";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -397,7 +495,6 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_INPUT_FILETYPE = sourcecode.cpp.objcpp;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -405,10 +502,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = " \"$(SRCROOT)/\"    ";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "$(inherited)";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -419,26 +514,24 @@
 		FBA02C561FB58F2400A78EEF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = N9SA4U6HWT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/GTToolBox/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.geenti.GTToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -450,26 +543,24 @@
 		FBA02C571FB58F2400A78EEF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = N9SA4U6HWT;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "$(SRCROOT)/GTToolBox/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 14.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MARKETING_VERSION = 1.2.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.geenti.GTToolBox;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

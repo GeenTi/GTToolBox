@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GTDataUntills : NSObject
+@interface GTDataTools : NSObject
 /*!
     支持 字典、数组  自定义数据类型  objectClass 必须是  自定义类 Class
     例如 ZXCustomString : NSString   ZXCustomString *testString = [[ZXCustomString alloc] init] 应该传入  [ZXCustomString:NSString Class]; 而不是[testString Class]、[NSString Class]

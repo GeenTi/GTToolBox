@@ -10,7 +10,7 @@
 #import "GTUDPService.h"
 #import "GTEncryption.h"
 
-#import "GTDataUntills.h"
+#import "GTDataTools.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -101,7 +101,7 @@ extern "C" {
 {
     UDPDataExchangeModel.msg = [GTEncryption GT_encryptionStrWithWaitingEncryptionString:UDPDataExchangeModel.msg keyString:UDPDataExchangeModel.TKIP];
     
-    NSString    *sendStr = [GTDataUntills handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
+    NSString    *sendStr = [GTDataTools handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
     NSData      *sendData = [sendStr dataUsingEncoding:NSUTF8StringEncoding];
     
     Byte *buffer = (Byte *)[sendData bytes];
@@ -114,7 +114,7 @@ extern "C" {
 {
     UDPDataExchangeModel.msg = [GTEncryption GT_encryptionStrWithWaitingEncryptionString:UDPDataExchangeModel.msg keyString:UDPDataExchangeModel.TKIP];
     
-    NSString    *sendStr = [GTDataUntills handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
+    NSString    *sendStr = [GTDataTools handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
 
     NSData      *sendData = [sendStr dataUsingEncoding:NSUTF8StringEncoding];
     
@@ -129,7 +129,7 @@ extern "C" {
 {
     UDPDataExchangeModel.msg = [GTEncryption GT_encryptionStrWithWaitingEncryptionString:UDPDataExchangeModel.msg keyString:UDPDataExchangeModel.TKIP];
     
-    NSString    *sendStr = [GTDataUntills handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
+    NSString    *sendStr = [GTDataTools handleObjectTOJsonstringWithObject:UDPDataExchangeModel objectClass:[GTUDPDataExchangeModel class]];
     
     NSData      *sendData = [sendStr dataUsingEncoding:NSUTF8StringEncoding];
     
@@ -159,7 +159,7 @@ extern "C" {
             msgData = [NSData dataWithBytes:data length:rlen];
             str = [[NSString alloc] initWithData:msgData encoding:NSUTF8StringEncoding];	// 以后必须改成 UTF-8 的字符串！！！
             
-            GTUDPDataExchangeModel *recUDPMod = [GTDataUntills parserNormalDataWithJSONData:msgData model:[GTUDPDataExchangeModel class]];
+            GTUDPDataExchangeModel *recUDPMod = [GTDataTools parserNormalDataWithJSONData:msgData model:[GTUDPDataExchangeModel class]];
             recUDPMod.msg = [GTEncryption GT_decryptionStrWithWaitingDecryptionString:recUDPMod.msg keyString:recUDPMod.TKIP];
 
             [self handleReceiveUDPDataWithReceiveUDPData:recUDPMod];

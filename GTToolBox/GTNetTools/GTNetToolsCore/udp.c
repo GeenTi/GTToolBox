@@ -22,7 +22,7 @@ static struct sockaddr_in struAddr;
 static struct sockaddr_in toAddr;
 
 
-#pragma mark -- 添加于 高文明
+#pragma mark -- 添加于 WMYeah
 
 long sendUDPToAddressAndPort(unsigned char *data, int len, const char *address, int sendPort)
 {
@@ -145,7 +145,7 @@ int initUDPWithPoints(int sendPoint,int recivePoint)
     return 0;
 }
 
-int initUDP()
+int initUDP(void)
 {
     int tmp;
     
@@ -189,7 +189,7 @@ int initUDP()
     return 0;
 }
 
-void closeUDP()
+void closeUDP(void)
 {
 	  if(sockfd>=0)
 	  	  close(sockfd);
